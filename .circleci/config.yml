@@ -22,10 +22,10 @@ jobs:
           name: run test
           command: |
             . venv/bin/activate
-            falke8 --exclude=env* --statistics
+            falke8 --exclude=venv* --statistics
             pytest --junitxml -test-results/junit.xml
-      - store_test_results:
-          path: test-results
-      - store_artifacts:
-          path: test-results ssh-keygen -t rsa^C
-            ls ~/.ssh/
+            # - store_test_results:
+            # path: test-results
+            # - store_artifacts:
+            # path: test-results ssh-keygen -t rsa^C
+            # ls ~/.ssh/
