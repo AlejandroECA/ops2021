@@ -5,7 +5,7 @@ jobs:
   # build:
   build:
     docker:
-      - image: circleci/python 3.7
+      - image: circleci/python 3.8
     working_directory: ~/devops
     steps:
       #1 obtain repo from git
