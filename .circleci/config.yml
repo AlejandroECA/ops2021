@@ -16,7 +16,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install -r equirements.txt
+            pip install -r requirements.txt
     #3 run coding convention software and the tester
       - run:
           name: run test
