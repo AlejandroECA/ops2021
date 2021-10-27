@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
         - image: circleci/python:3.8
-    working_directory: ~/devops
+    working_directory: ~/devops/DEPLOY20211026
     steps:
       #1 obtain repo from git
       - checkout
@@ -25,7 +25,7 @@ jobs:
             flake8 --exclude=venv* --statistics
             pytest --junitxml=test-results/junit.xml
             # - store_test_results:
-            # path: test-results
-            # - store_artifacts:
-            # path: test-results ssh-keygen -t rsa^C
-            # ls ~/.ssh/
+                    # path: test-results
+                # - store_artifacts:
+                    # path: test-results ssh-keygen -t rsa^C
+               # ls ~/.ssh/
