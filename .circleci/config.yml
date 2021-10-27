@@ -3,7 +3,7 @@
 version: 2.1
 jobs:
   # build:
-  deploy2021:
+  build:
     docker:
         - image: circleci/python:3.8
     working_directory: ~/devops
