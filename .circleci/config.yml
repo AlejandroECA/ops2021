@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
         - image: circleci/python:3.8
-    working_directory: ~/devops/DEPLOY20211026
+    working_directory: ~/devops
     steps:
       #1 obtain repo from git
       - checkout
@@ -29,3 +29,10 @@ jobs:
                 # - store_artifacts:
                     # path: test-results ssh-keygen -t rsa^C
                # ls ~/.ssh/
+               #
+       - run:
+          name: Deploy to Deploy Directory
+          command: |
+                cd ..
+                mkdir DEPLOY2021
+                cp /devops /DEPLOY2021   
