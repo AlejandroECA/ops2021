@@ -31,8 +31,8 @@ jobs:
                # ls ~/.ssh/
                #
        - run:
-          name: Deploy to Deploy Directory
-          command: |
+           name: Deploy to Deploy-Directory
+           command: |
                 cd ..
                 mkdir DEPLOY2021
                 cp /devops /DEPLOY2021   
