@@ -3,7 +3,7 @@
 version: 2.1
 jobs:
   # build:
-  deploy-{CURRENT_DATE}:
+  deploy-${CURRENT_DATE}:
     docker:
         - image: circleci/python:3.8
     working_directory: ~/devops
