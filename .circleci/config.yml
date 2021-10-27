@@ -29,10 +29,4 @@ jobs:
                 # - store_artifacts:
                     # path: test-results ssh-keygen -t rsa^C
                # ls ~/.ssh/
-               #
-       - run:
-           name: Deploy to Deploy-Directory
-           command: |
-                cd ..
-                mkdir DEPLOY2021
-                cp /devops /DEPLOY2021   
+
